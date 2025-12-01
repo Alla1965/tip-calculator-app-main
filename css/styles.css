@@ -1,0 +1,289 @@
+@import url("tokens.css");
+
+body {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  background-color: var(--color-grey-200);
+  margin: 0;
+}
+
+.container {
+  width: 375px;
+  height: 933px;
+  display: grid;
+  margin: 60px auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 608px;
+    height: 944px;
+    padding: 54px 75.5px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 920px;
+    height: 625px;
+    padding: 0;
+  }
+}
+/* -------------------- HEADER -------------------- */
+.splitter {
+  display: flex;
+  margin: 50px auto;
+}
+.splitter-image {
+  margin: 0 auto;
+  align-self: center;
+}
+/* -------------------- MAIN CONTENT -------------------- */
+.main-content {
+  height: 789px;
+  background-color: var(--color-white);
+  border-radius: 25px;
+}
+@media (min-width: 1440px) {
+  .main-content {
+    display: flex;
+    width: 840px;
+    height: 417px;
+    padding: 32px 40px;
+  }
+}
+/* -------------------- COUNT TIPS -------------------- */
+.count-tips {
+  width: 327px;
+  height: 432px;
+  padding: 32px 32px;
+  background-color: var(--color-white);
+  border-radius: 25px;
+}
+@media (min-width: 768px) {
+  .count-tips {
+    width: 457px;
+    height: 352px;
+    padding: 54px 80px 48px;
+  }
+}
+@media (min-width: 1440px) {
+  .count-tips {
+    width: 379px;
+    height: 379px;
+    padding: 16.5px 0;
+  }
+}
+/* -------------------- INPUT CASH -------------------- */
+.input-cash {
+  width: 275px;
+  height: 48px;
+  margin-bottom: 32px;
+  background-color: var(--color-grey-50);
+  padding: 0 18px;
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  gap: 16px;
+  border-radius: 5px;
+  align-items: center;
+}
+.input-cash:hover {
+  cursor: pointer;
+}
+.input-cash:focus-within {
+  border: 2px solid var(--color-green-400);
+}
+@media (min-width: 768px) {
+  .input-cash {
+    width: 419px;
+    padding: 0 19px;
+  }
+}
+@media (min-width: 1440px) {
+  .input-cash {
+    width: 347px;
+    padding: 0 16px;
+  }
+}
+.bill {
+  width: 100%;
+}
+.bill-text {
+  padding: 0 8px;
+}
+.dollar {
+  align-self: center;
+}
+.bill-input {
+  width: 100%;
+  border: none;
+  background-color: var(--color-grey-50);
+  text-align: right;
+  outline: none;
+}
+.bill-input:hover {
+  cursor: pointer;
+}
+.bill-input::placeholder {
+  color: var(--color-grey-500);
+}
+
+/* -------------------- PERCENT GRID -------------------- */
+.percent {
+  width: 311px;
+  display: grid;
+  grid-template-columns: repeat(2, 147px);
+  grid-template-rows: repeat(3, 48px);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 24px;
+}
+@media (min-width: 768px) {
+  .percent {
+    width: 457px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 48px);
+  }
+}
+@media (min-width: 1440px) {
+  .percent {
+    width: 379px;
+  }
+}
+.percent-item {
+  background-color: var(--color-green-900);
+  color: var(--color-white);
+  border-radius: 5px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percent-item:last-child {
+  background-color: var(--color-grey-50);
+  color: var(--color-grey-550);
+}
+.percent-item:hover {
+  background-color: var(--color-green-200); /* або будь-який */
+  color: var(--color-green-900);
+  cursor: pointer;
+}
+.percent-item-input {
+  display: none; /* або visibility: hidden; */
+}
+/* -------------------- NUMBER INPUT -------------------- */
+.number-par {
+  border: none;
+  background-color: var(--color-grey-50);
+  color: var(--color-green-900);
+  margin: 0;
+  text-align: right;
+}
+.input-error {
+  border: 2px solid red;
+}
+.people-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.people-error {
+  color: #e63946;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* -------------------- AMOUNT BOX -------------------- */
+.amount {
+  width: 281px;
+  height: 209px;
+  background-color: var(--color-green-900);
+  border-radius: 15px;
+  padding: 24px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .amount {
+    width: 362px;
+    height: 209px;
+    padding: 43px 47.5px;
+  }
+}
+@media (min-width: 1440px) {
+  .amount {
+    width: 333px;
+    height: 342px;
+    padding: 37.5px 40px;
+    margin: 0 48px;
+  }
+}
+/* -------------------- TIP AMOUNT -------------------- */
+.tip-amount {
+  height: 47px;
+  display: flex;
+  margin: 0;
+  margin-bottom: 24px;
+}
+@media (min-width: 1440px) {
+  .tip-amount {
+    margin-bottom: 48px;
+  }
+}
+.tip-par {
+  width: 130px;
+  height: 44px;
+  color: var(--color-white);
+  margin: 0 80px 24px 0;
+}
+@media (min-width: 768px) {
+  .tip-par {
+    margin-right: 148px;
+  }
+}
+
+.tip-par-span {
+  color: var(--color-grey-400);
+}
+.dollar-amount {
+  margin: 0;
+}
+.tip-par-sum {
+  margin: 0;
+}
+.tip-par-sum-total {
+  margin: 0;
+}
+
+/* -------------------- BUTTON -------------------- */
+.btn-sum {
+  width: 281px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: var(--color-green-750);
+  color: var(--color-green-800);
+  border: none;
+  margin-top: 8px;
+}
+.btn-sum:hover {
+  background-color: var(--color-green-200);
+  color: var(--color-green-900);
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .btn-sum {
+    width: 362px;
+    margin-top: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .btn-sum {
+    width: 333px;
+    margin: 104px 0 auto;
+  }
+}
+.attribution {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}

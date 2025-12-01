@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/modal.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="splitter">
+        <img
+          class="splitter-image"
+          src="images/splitter.png"
+          alt="splitter"
+          width="87"
+          height="54"
+        />
+      </section>
+      <div class="main-content">
+        <section class="count-tips">
+          <article class="bill">
+            <h1 class="bill-text preset5">Bill</h1>
+            <div class="input-cash">
+              <img
+                class="dollar"
+                src="./images/icon-dollar.svg"
+                alt="Dollar"
+                width="10"
+                height="16"
+              />
+              <input
+                type="number"
+                id="bill"
+                class="bill-input preset3"
+                placeholder="0"
+              />
+            </div>
+          </article>
+          <p class="select preset5">Select Tip %</p>
+          <div class="percent">
+            <label class="percent-item preset3">
+              <input
+                type="radio"
+                name="percent"
+                value="5"
+                class="percent-item-input"
+              />
+              5%
+            </label>
+            <label class="percent-item preset3">
+              <input
+                type="radio"
+                name="percent"
+                value="10"
+                class="percent-item-input"
+              />
+              10%
+            </label>
+
+            <label class="percent-item preset3">
+              <input
+                type="radio"
+                name="percent"
+                value="15"
+                class="percent-item-input"
+              />
+              15%
+            </label>
+            <label class="percent-item preset3">
+              <input
+                type="radio"
+                name="percent"
+                value="25"
+                class="percent-item-input"
+              />
+              25%
+            </label>
+            <label class="percent-item preset3">
+              <input
+                type="radio"
+                name="percent"
+                value="50"
+                class="percent-item-input"
+              />
+              50%
+            </label>
+            <label class="percent-item preset3">
+              <input
+                type="radio"
+                name="percent"
+                value="custom"
+                class="percent-item-input"
+              />
+              Custom
+            </label>
+          </div>
+          <!-- </ul> -->
+          <article class="number bill">
+            <div class="people-header">
+              <h2 class="bill-text preset5">Number of People</h2>
+              <span class="people-error"></span>
+            </div>
+            <!-- <h2 class="bill-text preset5">Number of People</h2> -->
+            <div class="input-cash">
+              <img
+                class="dollar"
+                src="./images/icon-person.svg"
+                alt="Percon"
+                width="10"
+                height="16"
+              />
+              <!-- <div class="people-error"></div> -->
+              <input
+                type="number"
+                id="people"
+                class="bill-input preset3"
+                placeholder="0"
+              />
+              <!-- <p class="number-par preset3">0</p> -->
+            </div>
+          </article>
+        </section>
+        <section class="amount">
+          <div class="tip-amount">
+            <p class="tip-par perset5">
+              Tip Amount <span class="tip-par-span perset6">/person</span>
+            </p>
+            <p class="dollar-amount preset2">$</p>
+
+            <p class="tip-par-sum preset2">0.00</p>
+          </div>
+          <div class="tip-amount">
+            <p class="tip-par">
+              Total <span class="tip-par-span">/person</span>
+            </p>
+            <p class="dollar-amount preset2">$</p>
+
+            <p class="tip-par-sum-total preset2">0.00</p>
+          </div>
+          <button class="btn-sum">RESET</button>
+        </section>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by&nbsp;
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by&nbsp;
+      <a href="https://github.com/Alla1965/tip-calculator-app-main"
+        >Alla Savranska</a
+      >.
+    </div>
+    <script src="/js/main.js" type="module"></script>
+    <!-- Custom Modal Prompt -->
+    <div id="custom-prompt" class="prompt hidden">
+      <div class="prompt-window">
+        <p class="prompt-title">Enter Custom %</p>
+
+        <input
+          type="number"
+          id="customPromptInput"
+          class="prompt-input"
+          placeholder="0"
+        />
+
+        <button id="customPromptOk" class="prompt-btn">OK</button>
+      </div>
+    </div>
+  </body>
+</html>
