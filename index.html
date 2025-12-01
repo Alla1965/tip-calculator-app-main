@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -37,7 +36,9 @@
       <div class="main-content">
         <section class="count-tips">
           <article class="bill">
-            <h1 class="bill-text preset5">Bill</h1>
+            <label for="bill">
+              <h1 class="bill-text preset5">Bill</h1>
+            </label>
             <div class="input-cash">
               <img
                 class="dollar"
@@ -114,11 +115,11 @@
           </div>
           <!-- </ul> -->
           <article class="number bill">
-            <div class="people-header">
+            <label class="people-header" for="people">
               <h2 class="bill-text preset5">Number of People</h2>
               <span class="people-error"></span>
-            </div>
-            <!-- <h2 class="bill-text preset5">Number of People</h2> -->
+            </label>
+
             <div class="input-cash">
               <img
                 class="dollar"
@@ -127,14 +128,12 @@
                 width="10"
                 height="16"
               />
-              <!-- <div class="people-error"></div> -->
               <input
                 type="number"
                 id="people"
                 class="bill-input preset3"
                 placeholder="0"
               />
-              <!-- <p class="number-par preset3">0</p> -->
             </div>
           </article>
         </section>
@@ -160,7 +159,7 @@
       </div>
     </main>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by&nbsp;
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
@@ -168,8 +167,9 @@
       <a href="https://github.com/Alla1965/tip-calculator-app-main"
         >Alla Savranska</a
       >.
-    </div>
+    </footer>
     <script src="/js/main.js" type="module"></script>
+
     <!-- Custom Modal Prompt -->
     <div id="custom-prompt" class="prompt hidden">
       <div class="prompt-window">
